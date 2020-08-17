@@ -4,3 +4,5 @@ class Place {
         this.title = title;
      }
 }
+
+export default Place;
