@@ -4,6 +4,7 @@ import { StyleSheet, View, Text, TextInput, ScrollView, Button } from 'react-nat
 import * as placesActions from '../store/actions/places.action'
 import Colors from '../constants/Colors'
 import ImgPicker from '../components/places/ImageSelector'
+import LocationPicker from '../components/places/LocationPicker'
 
 const NewPlaceScreen = props => {
 
@@ -32,6 +33,7 @@ const NewPlaceScreen = props => {
                     onChangeText={titleChangeHandler}
                     value={titleValue} />
                     <ImgPicker onImageTaken={imageTakenHandler}/>
+                    <LocationPicker />
                 <Button title='Save place' color={Colors.primary} onPress={savePlaceHandler} />
             </View>
 
